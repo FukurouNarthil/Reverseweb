@@ -33,6 +33,10 @@
 
 ![](images/signup.png)
 
+- 上传
+
+![](images/upload.png)
+
 
 
 ## 参考资料
