@@ -23,6 +23,88 @@
 
 - 在
 
+## 后端代码
+
+- 数据库连接：`models.py`
+
+```python
+from django.db import models
+
+# Create your models here.
+class User(models.Model):
+    username = models.CharField(max_length=100)
+    password = models.CharField(max_length=100)
+    filename = models.CharField(max_length=100)
+
+class document(models.Model):
+    filename = models.CharField(max_length=100)
+    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
+    timestamp = models.DateField()
+    document = models.FileField(upload_to='documents/')
+```
+
+- 路由：`urls.py`
+
+```python
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.login, name='login'),
+    path('signup', views.signup, name='signup'),
+    path('upload', views.upload, name='upload')
+]
+```
+
+- 注册：`view.py: signup`
+
+```python
+# 注册
+def signup(request):
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        if username and password:
+            # 数据库添加
+            user = User(username=username, password=password, filename='')
+            user.save()
+            return JsonResponse({
+                'success': True,
+                'redirect': '/web',
+            })
+        else:
+            print('No such user')
+    return render(request, 'web/signup.html')
+```
+
+- 登录：`view.py: login`
+
+```python
+# 首页
+def login(request):
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        if username and password:
+            # 数据库查询
+            try:
+                is_user = User.objects.get(username=username)
+            except ObjectDoesNotExist:
+                print('no such user!')
+                return render(request, 'web/login.html')
+            print(is_user)
+            # return render(request, 'web/login.html')
+            return JsonResponse({
+                'success': True,
+                'redirect': 'upload',
+            })
+        else:
+            print('No such user')
+    return render(request, 'web/login.html')
+```
+
+
+
 ## 页面展示
 
 - 登录
