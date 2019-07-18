@@ -1,0 +1,184 @@
+/*=========== TABLE OF CONTENTS ===========
+1.  General css (Reset code)
+2.  Header
+
+/*-------------------------------------
+		1.General css (Reset code)
+--------------------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size:14px;
+    color: #a7a7a7;
+    background: #f4f6fa;
+    max-width:1920px;
+    margin:0 auto;
+    overflow-x:hidden;
+    overflow-y: hidden;
+    background-image: url('../../static/web/background.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 40px;
+}
+
+.wrapper {
+    height: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 120px;
+}
+
+a,a:hover,a:active,a:focus {
+    display:inline-block;
+    text-decoration:none;
+    color: #7c8089;
+    font-size: 16px;
+    font-weight: 400;
+    padding:0;
+}
+h1,h2,h3,h4,h5,h6 { 
+    margin: 0;
+    color:#464d5f;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+p {
+    margin: 0;
+    line-height: 28px;
+    color:#97a0ba;
+    font-size:16px;
+    font-family: 'Poppins', sans-serif;
+}
+img{    border:none;max-width:100%; height:auto;}
+ul{
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+}
+ul li {
+    list-style: none;
+    
+}
+select,input,textarea,button,.form-control{box-shadow:none;outline:0!important;}
+
+
+html,body{
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+[placeholder]:focus::-webkit-input-placeholder {
+  -webkit-transition: opacity 0.3s 0.3s ease; 
+  -moz-transition: opacity 0.3s 0.3s ease; 
+  -ms-transition: opacity 0.3s 0.3s ease; 
+  -o-transition: opacity 0.3s 0.3s ease; 
+  transition: opacity 0.3s 0.3s ease; 
+  opacity: 0;
+}
+
+/*=============Style css=========*/
+
+/*-------------------------------------
+		2. Header
+--------------------------------------*/
+.login{
+    /* padding: 171px 0; */
+    height: 80%;
+    max-height: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.sign-content {
+    width: 500px;
+    margin: 0 auto;
+}
+.sign-content h2{
+    color: #464d5f;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 54px;
+}
+
+/*.signin-form  .form-control*/
+.signin-form  .form-control {
+    background: transparent;
+    border: transparent;
+    border-bottom: 1px solid #bcbfc9;
+    border-radius: 0;
+    outline: 0!important;
+    box-shadow: none;
+    padding: 0px 0;
+    height: 46px;
+    -webkit-transition: linear .5s;
+    -moz-transition: linear .5s;
+    -ms-transition: linear .5s;
+    -o-transition: linear .5s;
+    transition: linear .5s;
+}
+.signin-form  .form-control:hover,.signin-form  .form-control:focus{
+    border-bottom: 1px solid #474d5b;
+    color:#474d5b;
+}
+
+.signin-form label{
+    position: relative;
+    top: 5px;
+    color: #474d5b;
+    font-size:14px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+.signin-form input[type="text"],.signin-form input[type="email"],.signin-form input[type="password"]{
+    color:#474d5b;
+    font-size:16px;
+    font-weight: 400;
+}
+/*.signin-form  .form-control*/
+
+/*.btn.signin_btn*/
+.btn.signin_btn,.btn.signin_btn:focus {
+    width: 100%;
+    padding: 0;
+    height: 60px;
+    background: #26d9b3;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    box-shadow: 0 5px 30px rgba(60,191,163,.3);
+    margin-top: 23px;
+}
+
+.btn.signin_btn.signin_btn_two,.btn.signin_btn.signin_btn_two:focus{
+    background: #B0C4DE;
+    box-shadow: 0 5px 30px rgba(176, 196, 222,.3);
+}
+
+.signin-footer {
+    text-align: center;
+}

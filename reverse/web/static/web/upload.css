@@ -1,0 +1,81 @@
+* {
+    padding: 40px;
+}
+
+/* *{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing:border-box;
+} */
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size:14px;
+    color: #a7a7a7;
+    background: #f4f6fa;
+    background-image: url('../../static/web/background.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow-y: hidden;
+}
+
+.wrapper {
+    height: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+.container {
+    margin: 0 auto; 
+    width: 80%;
+}
+
+.upload-form {
+    height: 500px;
+    background-color: rgba(245, 245, 245, 0.5);
+    border: #B0C4DE 5px dashed;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.button-container {
+    padding: 170px;
+}
+
+.upload-button {
+    margin: 0 auto; 
+    width: 160px;
+    height: 76px;
+    padding: 0px;
+}
+
+.btn {
+    margin: 0 auto; 
+    width: 160px;
+    height: 76px;
+    padding: 0;
+    color: #F5F5F5;
+    border: rgb(198, 211, 230) 2px solid;
+    background: rgb(198, 211, 230);
+}
+.btn:hover {
+    color: #B0C4DE;
+}
+
+.btn span {
+    margin-left: -11px;
+    width: 100%;
+    font-size: 30px;
+}

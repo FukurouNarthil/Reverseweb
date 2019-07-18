@@ -1,0 +1,245 @@
+================00400260================
+  00400260: push  ebp
+  00400261: mov   ebp,esp
+  00400263: mov   eax,dword ptr [ebp+8]
+  00400266: add   eax,dword ptr [ebp+0Ch]
+  00400269: pop   ebp
+  0040026A: ret
+
+
+================00400270================
+  00400270: push  ebp
+  00400271: mov   ebp,esp
+  00400273: push  ecx
+  00400274: mov   eax,dword ptr [ebp+0Ch]
+  00400277: push  eax
+  00400278: mov   ecx,dword ptr [ebp+8]
+  0040027B: push  ecx
+  0040027C: call  00400260
+  00400281: add   esp,8
+  00400284: mov   dword ptr [ebp-4],eax
+  00400287: mov   eax,dword ptr [ebp-4]
+  0040028A: imul  eax,dword ptr [ebp-4]
+  0040028E: mov   esp,ebp
+  00400290: pop   ebp
+  00400291: ret
+
+
+================004002A0================
+  004002A0: push  ebp
+  004002A1: mov   ebp,esp
+  004002A3: sub   esp,8
+  004002A6: mov   eax,dword ptr [ebp+0Ch]
+  004002A9: push  eax
+  004002AA: mov   ecx,dword ptr [ebp+8]
+  004002AD: push  ecx
+  004002AE: call  00400270
+  004002B3: add   esp,8
+  004002B6: mov   dword ptr [ebp-4],eax
+  004002B9: mov   edx,dword ptr [ebp+10h]
+  004002BC: push  edx
+  004002BD: mov   eax,dword ptr [ebp-4]
+  004002C0: push  eax
+  004002C1: call  00400260
+  004002C6: add   esp,8
+  004002C9: mov   dword ptr [ebp-8],eax
+  004002CC: mov   eax,dword ptr [ebp-8]
+  004002CF: mov   esp,ebp
+  004002D1: pop   ebp
+  004002D2: ret
+
+
+================004002E0================
+  004002E0: push  ebp
+  004002E1: mov   ebp,esp
+  004002E3: mov   eax,dword ptr [ebp+8]
+  004002E6: sub   eax,dword ptr [ebp+0Ch]
+  004002E9: pop   ebp
+  004002EA: ret
+
+
+================004002F0================
+  004002F0: push  ebp
+  004002F1: mov   ebp,esp
+  004002F3: sub   esp,1Ch
+  004002F6: mov   dword ptr [ebp-0Ch],0
+  004002FD: push  3
+  004002FF: push  2
+  00400301: call  00400260
+  00400306: add   esp,8
+  00400309: mov   dword ptr [ebp-4],eax
+  0040030C: push  4
+  0040030E: push  3
+  00400310: call  00400270
+  00400315: add   esp,8
+  00400318: mov   dword ptr [ebp-8],eax
+  0040031B: push  1
+  0040031D: mov   eax,dword ptr [ebp-8]
+  00400320: push  eax
+  00400321: mov   ecx,dword ptr [ebp-4]
+  00400324: push  ecx
+  00400325: call  004002A0
+  0040032A: add   esp,0Ch
+  0040032D: mov   dword ptr [ebp-1Ch],eax
+  00400330: mov   edx,dword ptr [ebp-4]
+  00400333: cmp   edx,dword ptr [ebp-8]
+  00400336: jne   0040034B
+----------------------------------------
+  00400338: push  0
+  0040033A: push  400640h
+  0040033F: push  0
+  00400341: push  0
+  00400343: call  MessageBoxA
+  00400349: jmp   00400370
+----------------------------------------
+----------------------------------------
+  0040034B: mov   eax,dword ptr [ebp-4]
+  0040034E: cmp   eax,dword ptr [ebp-8]
+  00400351: jge   00400368
+----------------------------------------
+  00400353: mov   ecx,dword ptr [ebp-8]
+  00400356: push  ecx
+  00400357: mov   edx,dword ptr [ebp-4]
+  0040035A: push  edx
+  0040035B: call  004002E0
+  00400360: add   esp,8
+  00400363: mov   dword ptr [ebp-14h],eax
+  00400366: jmp   00400370
+----------------------------------------
+----------------------------------------
+  00400368: push  0
+  0040036A: call  ExitProcess
+----------------------------------------
+  00400370: cmp   dword ptr [ebp-4],5
+  00400374: jne   00400387
+----------------------------------------
+  00400376: push  0
+  00400378: push  400648h
+  0040037D: push  0
+  0040037F: push  0
+  00400381: call  MessageBoxA
+----------------------------------------
+  00400387: cmp   dword ptr [ebp-14h],28h
+  0040038B: jge   00400397
+----------------------------------------
+  0040038D: push  0
+  0040038F: call  ExitProcess
+  00400395: jmp   004003A9
+----------------------------------------
+----------------------------------------
+  00400397: mov   eax,dword ptr [ebp-14h]
+  0040039A: sub   eax,0Ah
+  0040039D: mov   dword ptr [ebp-14h],eax
+  004003A0: mov   ecx,dword ptr [ebp-8]
+  004003A3: sub   ecx,30h
+  004003A6: mov   dword ptr [ebp-8],ecx
+----------------------------------------
+  004003A9: mov   edx,dword ptr [ebp-4]
+  004003AC: push  edx
+  004003AD: mov   eax,dword ptr [ebp-1Ch]
+  004003B0: push  eax
+  004003B1: call  004002E0
+  004003B6: add   esp,8
+  004003B9: mov   dword ptr [ebp-18h],eax
+  004003BC: cmp   dword ptr [ebp-18h],1Eh
+  004003C0: je    004003CC
+----------------------------------------
+  004003C2: push  0
+  004003C4: call  ExitProcess
+  004003CA: jmp   004003D3
+----------------------------------------
+----------------------------------------
+  004003CC: mov   dword ptr [ebp-18h],1Eh
+----------------------------------------
+  004003D3: cmp   dword ptr [ebp-0Ch],32h
+  004003D7: jge   00400481
+----------------------------------------
+  004003DD: mov   ecx,dword ptr [ebp-0Ch]
+  004003E0: add   ecx,dword ptr [ebp-4]
+  004003E3: mov   dword ptr [ebp-0Ch],ecx
+  004003E6: mov   edx,dword ptr [ebp-0Ch]
+  004003E9: mov   dword ptr [ebp-10h],edx
+  004003EC: mov   eax,dword ptr [ebp-10h]
+  004003EF: sub   eax,5
+  004003F2: mov   dword ptr [ebp-10h],eax
+  004003F5: cmp   dword ptr [ebp-10h],13h
+  004003F9: ja    0040046B
+----------------------------------------
+  004003FB: mov   ecx,dword ptr [ebp-10h]
+  004003FE: movz  edx,byte ptr [ecx+004004A4h]
+  00400405: jmp   dword ptr [edx*4+0040048Ch]
+----------------------------------------
+  0040040C: push  0
+  0040040E: push  0
+  00400410: push  400650h
+  00400415: push  0
+  00400417: call  MessageBoxA
+  0040041D: jmp   0040047C
+----------------------------------------
+  0040041F: push  0
+  00400421: push  0
+  00400423: push  400658h
+  00400428: push  0
+  0040042A: call  MessageBoxA
+  00400430: jmp   0040047C
+----------------------------------------
+  00400432: push  0
+  00400434: push  0
+  00400436: push  400660h
+  0040043B: push  0
+  0040043D: call  MessageBoxA
+  00400443: jmp   0040047C
+----------------------------------------
+  00400445: push  0
+  00400447: push  0
+  00400449: push  400668h
+  0040044E: push  0
+  00400450: call  MessageBoxA
+  00400456: jmp   0040047C
+----------------------------------------
+  00400458: push  0
+  0040045A: push  0
+  0040045C: push  400670h
+  00400461: push  0
+  00400463: call  MessageBoxA
+  00400469: jmp   0040047C
+----------------------------------------
+----------------------------------------
+  0040046B: push  0
+  0040046D: push  0
+  0040046F: push  400678h
+  00400474: push  0
+  00400476: call  MessageBoxA
+  0040047C: jmp   004003D3
+----------------------------------------
+  00400481: jmp   00400485
+----------------------------------------
+  00400483: jmp   00400487
+----------------------------------------
+----------------------------------------
+  00400485: xor   eax,eax
+----------------------------------------
+  00400487: mov   esp,ebp
+  00400489: pop   ebp
+  0040048A: ret
+
+
+================0040048B================
+  0040048B: nop
+  0040048C: or    al,4
+  0040048E: inc   eax
+  0040048F: add   byte ptr [edi],bl
+  00400491: add   al,40h
+  00400493: add   byte ptr [edx],dh
+  00400495: add   al,40h
+  00400497: add   byte ptr [ebp+4],al
+  0040049A: inc   eax
+  0040049B: add   byte ptr [eax+4],bl
+  0040049E: inc   eax
+  0040049F: add   byte ptr [ebx+4],ch
+  004004A2: inc   eax
+  004004A3: add   byte ptr [eax],al
+  004004A5: add   eax,5050501h
+  004004AA: add   eax,5050502h
+  004004AF: add   eax,3050505h
+  004004B4:  004004B5:  004004B6:  004004B7:

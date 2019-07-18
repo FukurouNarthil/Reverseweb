@@ -1,0 +1,266 @@
+Microsoft (R) COFF/PE Dumper Version 14.11.25547.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file test.exe
+
+PE signature found
+
+File Type: EXECUTABLE IMAGE
+
+FILE HEADER VALUES
+             14C machine (x86)
+               4 number of sections
+        5A3C77AD time date stamp Fri Dec 22 11:10:37 2017
+               0 file pointer to symbol table
+               0 number of symbols
+              E0 size of optional header
+             102 characteristics
+                   Executable
+                   32 bit word machine
+
+OPTIONAL HEADER VALUES
+             10B magic # (PE32)
+           14.11 linker version
+             260 size of code
+             220 size of initialized data
+               0 size of uninitialized data
+             2F0 entry point (004002F0)
+             260 base of code
+             4C0 base of data
+          400000 image base (00400000 to 004006DF)
+              20 section alignment
+              20 file alignment
+            6.00 operating system version
+            0.00 image version
+            6.00 subsystem version
+               0 Win32 version
+             6E0 size of image
+             260 size of headers
+               0 checksum
+               3 subsystem (Windows CUI)
+            8540 DLL characteristics
+                   Dynamic base
+                   NX compatible
+                   No structured exception handler
+                   Terminal Server Aware
+          100000 size of stack reserve
+            1000 size of stack commit
+          100000 size of heap reserve
+            1000 size of heap commit
+               0 loader flags
+              10 number of directories
+               0 [       0] RVA [size] of Export Directory
+             5A0 [      3C] RVA [size] of Import Directory
+               0 [       0] RVA [size] of Resource Directory
+               0 [       0] RVA [size] of Exception Directory
+               0 [       0] RVA [size] of Certificates Directory
+             6A0 [      40] RVA [size] of Base Relocation Directory
+             4D0 [      1C] RVA [size] of Debug Directory
+               0 [       0] RVA [size] of Architecture Directory
+               0 [       0] RVA [size] of Global Pointer Directory
+               0 [       0] RVA [size] of Thread Storage Directory
+               0 [       0] RVA [size] of Load Configuration Directory
+               0 [       0] RVA [size] of Bound Import Directory
+             4C0 [      10] RVA [size] of Import Address Table Directory
+               0 [       0] RVA [size] of Delay Import Directory
+               0 [       0] RVA [size] of COM Descriptor Directory
+               0 [       0] RVA [size] of Reserved Directory
+
+
+SECTION HEADER #1
+   .text name
+     258 virtual size
+     260 virtual address (00400260 to 004004B7)
+     260 size of raw data
+     260 file pointer to raw data (00000260 to 000004BF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+60000020 flags
+         Code
+         Execute Read
+
+RAW DATA #1
+  00400260: 55 8B EC 8B 45 08 03 45 0C 5D C3 CC CC CC CC CC  U.им.E..E.]?имимимимим
+  00400270: 55 8B EC 51 8B 45 0C 50 8B 4D 08 51 E8 DF FF FF  U.имQ.E.P.M.Qии???
+  00400280: FF 83 C4 08 89 45 FC 8B 45 FC 0F AF 45 FC 8B E5  ?.?..Eи╣.Eи╣.беEи╣.?
+  00400290: 5D C3 CC CC CC CC CC CC CC CC CC CC CC CC CC CC  ]?имимимимимимимимимимимимимим
+  004002A0: 55 8B EC 83 EC 08 8B 45 0C 50 8B 4D 08 51 E8 BD  U.им.им..E.P.M.Qии?
+  004002B0: FF FF FF 83 C4 08 89 45 FC 8B 55 10 52 8B 45 FC  ???.?..Eи╣.U.R.Eи╣
+  004002C0: 50 E8 9A FF FF FF 83 C4 08 89 45 F8 8B 45 F8 8B  Pии.???.?..E?.E?.
+  004002D0: E5 5D C3 CC CC CC CC CC CC CC CC CC CC CC CC CC  ?]?имимимимимимимимимимимимим
+  004002E0: 55 8B EC 8B 45 08 2B 45 0C 5D C3 CC CC CC CC CC  U.им.E.+E.]?имимимимим
+  004002F0: 55 8B EC 83 EC 1C C7 45 F4 00 00 00 00 6A 03 6A  U.им.им.?E?....j.j
+  00400300: 02 E8 5A FF FF FF 83 C4 08 89 45 FC 6A 04 6A 03  .ииZ???.?..Eи╣j.j.
+  00400310: E8 5B FF FF FF 83 C4 08 89 45 F8 6A 01 8B 45 F8  ии[???.?..E?j..E?
+  00400320: 50 8B 4D FC 51 E8 76 FF FF FF 83 C4 0C 89 45 E4  P.Mи╣Qииv???.?..E?
+  00400330: 8B 55 FC 3B 55 F8 75 13 6A 00 68 40 06 40 00 6A  .Uи╣;U?u.j.h@.@.j
+  00400340: 00 6A 00 FF 15 C8 04 40 00 EB 25 8B 45 FC 3B 45  .j.?.ии.@.?%.Eи╣;E
+  00400350: F8 7D 15 8B 4D F8 51 8B 55 FC 52 E8 80 FF FF FF  ?}..M?Q.Uи╣Rии.???
+  00400360: 83 C4 08 89 45 EC EB 08 6A 00 FF 15 C0 04 40 00  .?..Eим?.j.?.ид.@.
+  00400370: 83 7D FC 05 75 11 6A 00 68 48 06 40 00 6A 00 6A  .}и╣.u.j.hH.@.j.j
+  00400380: 00 FF 15 C8 04 40 00 83 7D EC 28 7D 0A 6A 00 FF  .?.ии.@..}им(}.j.?
+  00400390: 15 C0 04 40 00 EB 12 8B 45 EC 83 E8 0A 89 45 EC  .ид.@.?..Eим.ии..Eим
+  004003A0: 8B 4D F8 83 E9 30 89 4D F8 8B 55 FC 52 8B 45 E4  .M?.иж0.M?.Uи╣R.E?
+  004003B0: 50 E8 2A FF FF FF 83 C4 08 89 45 E8 83 7D E8 1E  Pии*???.?..Eии.}ии.
+  004003C0: 74 0A 6A 00 FF 15 C0 04 40 00 EB 07 C7 45 E8 1E  t.j.?.ид.@.?.?Eии.
+  004003D0: 00 00 00 83 7D F4 32 0F 8D A4 00 00 00 8B 4D F4  ....}?2..бш....M?
+  004003E0: 03 4D FC 89 4D F4 8B 55 F4 89 55 F0 8B 45 F0 83  .Mи╣.M?.U?.Ue.Ee.
+  004003F0: E8 05 89 45 F0 83 7D F0 13 77 70 8B 4D F0 0F B6  ии..Ee.}e.wp.Me.?
+  00400400: 91 A4 04 40 00 FF 24 95 8C 04 40 00 6A 00 6A 00  .бш.@.?$...@.j.j.
+  00400410: 68 50 06 40 00 6A 00 FF 15 C8 04 40 00 EB 5D 6A  hP.@.j.?.ии.@.?]j
+  00400420: 00 6A 00 68 58 06 40 00 6A 00 FF 15 C8 04 40 00  .j.hX.@.j.?.ии.@.
+  00400430: EB 4A 6A 00 6A 00 68 60 06 40 00 6A 00 FF 15 C8  ?Jj.j.h`.@.j.?.ии
+  00400440: 04 40 00 EB 37 6A 00 6A 00 68 68 06 40 00 6A 00  .@.?7j.j.hh.@.j.
+  00400450: FF 15 C8 04 40 00 EB 24 6A 00 6A 00 68 70 06 40  ?.ии.@.?$j.j.hp.@
+  00400460: 00 6A 00 FF 15 C8 04 40 00 EB 11 6A 00 6A 00 68  .j.?.ии.@.?.j.j.h
+  00400470: 78 06 40 00 6A 00 FF 15 C8 04 40 00 E9 52 FF FF  x.@.j.?.ии.@.ижR??
+  00400480: FF EB 02 EB 02 33 C0 8B E5 5D C3 90 0C 04 40 00  ??.?.3ид.?]?...@.
+  00400490: 1F 04 40 00 32 04 40 00 45 04 40 00 58 04 40 00  ..@.2.@.E.@.X.@.
+  004004A0: 6B 04 40 00 00 05 01 05 05 05 05 02 05 05 05 05  k.@.............
+  004004B0: 05 05 05 03 05 05 05 04                          ........
+
+SECTION HEADER #2
+  .rdata name
+     162 virtual size
+     4C0 virtual address (004004C0 to 00400621)
+     180 size of raw data
+     4C0 file pointer to raw data (000004C0 to 0000063F)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+RAW DATA #2
+  004004C0: 06 06 00 00 00 00 00 00 EC 05 00 00 00 00 00 00  ........им.......
+  004004D0: 00 00 00 00 AD 77 3C 5A 00 00 00 00 0D 00 00 00  ....-w<Z........
+  004004E0: B4 00 00 00 EC 04 00 00 EC 04 00 00 00 00 00 00  бф...им...им.......
+  004004F0: 60 02 00 00 58 02 00 00 2E 74 65 78 74 24 6D 6E  `...X....text$mn
+  00400500: 00 00 00 00 C0 04 00 00 10 00 00 00 2E 69 64 61  ....ид........ida
+  00400510: 74 61 24 35 00 00 00 00 D0 04 00 00 1C 00 00 00  ta$5....D.......
+  00400520: 2E 72 64 61 74 61 00 00 EC 04 00 00 B4 00 00 00  .rdata..им...бф...
+  00400530: 2E 72 64 61 74 61 24 7A 7A 7A 64 62 67 00 00 00  .rdata$zzzdbg...
+  00400540: A0 05 00 00 28 00 00 00 2E 69 64 61 74 61 24 32  ....(....idata$2
+  00400550: 00 00 00 00 C8 05 00 00 14 00 00 00 2E 69 64 61  ....ии........ida
+  00400560: 74 61 24 33 00 00 00 00 DC 05 00 00 10 00 00 00  ta$3....и╣.......
+  00400570: 2E 69 64 61 74 61 24 34 00 00 00 00 EC 05 00 00  .idata$4....им...
+  00400580: 36 00 00 00 2E 69 64 61 74 61 24 36 00 00 00 00  6....idata$6....
+  00400590: 40 06 00 00 41 00 00 00 2E 64 61 74 61 00 00 00  @...A....data...
+  004005A0: E4 05 00 00 00 00 00 00 00 00 00 00 FA 05 00 00  ?...........и▓...
+  004005B0: C8 04 00 00 DC 05 00 00 00 00 00 00 00 00 00 00  ии...и╣...........
+  004005C0: 14 06 00 00 C0 04 00 00 00 00 00 00 00 00 00 00  ....ид...........
+  004005D0: 00 00 00 00 00 00 00 00 00 00 00 00 06 06 00 00  ................
+  004005E0: 00 00 00 00 EC 05 00 00 00 00 00 00 7E 02 4D 65  ....им.......~.Me
+  004005F0: 73 73 61 67 65 42 6F 78 41 00 55 53 45 52 33 32  ssageBoxA.USER32
+  00400600: 2E 64 6C 6C 00 00 5C 01 45 78 69 74 50 72 6F 63  .dll..\.ExitProc
+  00400610: 65 73 73 00 4B 45 52 4E 45 4C 33 32 2E 64 6C 6C  ess.KERNEL32.dll
+  00400620: 00 00                                            ..
+
+  Debug Directories
+
+        Time Type        Size      RVA  Pointer
+    -------- ------- -------- -------- --------
+    5A3C77AD coffgrp       B4 000004EC      4EC
+
+  Section contains the following imports:
+
+    USER32.dll
+                4004C8 Import Address Table
+                4005E4 Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                  27E MessageBoxA
+
+    KERNEL32.dll
+                4004C0 Import Address Table
+                4005DC Import Name Table
+                     0 time date stamp
+                     0 Index of first forwarder reference
+
+                  15C ExitProcess
+
+SECTION HEADER #3
+   .data name
+      41 virtual size
+     640 virtual address (00400640 to 00400680)
+      60 size of raw data
+     640 file pointer to raw data (00000640 to 0000069F)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0000040 flags
+         Initialized Data
+         Read Write
+
+RAW DATA #3
+  00400640: 61 20 3D 20 62 21 00 00 61 20 3D 20 35 21 00 00  a = b!..a = 5!..
+  00400650: 78 20 3D 20 35 00 00 00 78 20 3D 20 37 00 00 00  x = 5...x = 7...
+  00400660: 78 20 3D 20 31 32 00 00 78 20 3D 20 32 30 00 00  x = 12..x = 20..
+  00400670: 78 20 3D 20 32 34 00 00 6E 6F 74 20 74 68 69 73  x = 24..not this
+  00400680: 00                                               .
+
+SECTION HEADER #4
+  .reloc name
+      40 virtual size
+     6A0 virtual address (004006A0 to 004006DF)
+      40 size of raw data
+     6A0 file pointer to raw data (000006A0 to 000006DF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+42000040 flags
+         Initialized Data
+         Discardable
+         Read Only
+
+RAW DATA #4
+  004006A0: 00 00 00 00 40 00 00 00 3B 33 45 33 6C 33 79 33  ....@...;3E3l3y3
+  004006B0: 83 33 91 33 C6 33 01 34 08 34 11 34 19 34 24 34  .3.3?3.4.4.4.4$4
+  004006C0: 2C 34 37 34 3F 34 4A 34 52 34 5D 34 65 34 70 34  ,474?4J4R4]4e4p4
+  004006D0: 78 34 8C 34 90 34 94 34 98 34 9C 34 A0 34 00 00  x4.4.4.4.4.4.4..
+
+BASE RELOCATIONS #4
+       0 RVA,       40 SizeOfBlock
+     33B  HIGHLOW            00400640
+     345  HIGHLOW            004004C8
+     36C  HIGHLOW            004004C0
+     379  HIGHLOW            00400648
+     383  HIGHLOW            004004C8
+     391  HIGHLOW            004004C0
+     3C6  HIGHLOW            004004C0
+     401  HIGHLOW            004004A4
+     408  HIGHLOW            0040048C
+     411  HIGHLOW            00400650
+     419  HIGHLOW            004004C8
+     424  HIGHLOW            00400658
+     42C  HIGHLOW            004004C8
+     437  HIGHLOW            00400660
+     43F  HIGHLOW            004004C8
+     44A  HIGHLOW            00400668
+     452  HIGHLOW            004004C8
+     45D  HIGHLOW            00400670
+     465  HIGHLOW            004004C8
+     470  HIGHLOW            00400678
+     478  HIGHLOW            004004C8
+     48C  HIGHLOW            0040040C
+     490  HIGHLOW            0040041F
+     494  HIGHLOW            00400432
+     498  HIGHLOW            00400445
+     49C  HIGHLOW            00400458
+     4A0  HIGHLOW            0040046B
+       0  ABS                        
+
+  Summary
+
+          60 .data
+         180 .rdata
+          40 .reloc
+         260 .text

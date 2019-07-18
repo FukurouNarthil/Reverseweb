@@ -1,0 +1,130 @@
+
+<!doctype html>
+<html  lang="en">
+
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+        <!-- title of site -->
+        <title>Resouce Share</title>
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="../static/font-awesome.min.css">
+		
+		<!--animate.css-->
+        <link rel="stylesheet" href="../static/animate.css">
+		
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="../static/bootstrap.min.css">
+		
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="../static/bootsnav.css" >	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="../static/download-style.css">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="../static/responsive.css">
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+	
+	<body>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+		
+		<!-- download list -->
+		<section class="download">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 col-md-offset-9 col-sm-4"><p>欢迎你，{{ username }}</p></div>
+					<div class="col-md-1 col-sm-4" id="logout"><a href="/logout">Log out</a></div>
+				</div>
+				<div class="row justify-content-between">
+    				<div class="col-lg-2 col-sm-4">
+      					<h2 class="page-title">Donwload</h2>
+    				</div>
+    				<div class="col-lg-6 col-sm-4">
+      					<p class="hint">{{text}}</p>
+    				</div>
+    				<div class="col-lg-4 col-sm-4 form-group">
+      						<form class="form-inline my-2 my-lg-0" action="{{url_for('search')}}">
+            					<input class="form-control mr-sm-2" type="text" placeholder="Search file" aria-label="Search" name="filename">
+            					<button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search">Search</button>
+        					</form>
+    				</div>
+  				</div>
+  				<div class="row">
+  					<div class="col">
+						<div class="donwload-content">
+							<div class="panel panel-default">
+								<table class="table table-hover table-striped">
+  									<thead>
+   	 									<tr>
+      										<th scope="col">No</th>
+      										<th scope="col">Filename</th>
+      										<th scope="col">Upload_time</th>
+      										<th scope="col">Download</th>
+    									</tr>
+  									</thead>
+  									<tbody id="display-files">
+  										{% for item in items %}
+    									<tr>
+      										<th scope="row">{{item.fid}}</th>
+      										<td class="filename">{{item.filename}}</td>
+      										<td>{{item.timestamp}}</td>
+      										<td><a class="download_url">download</a></td>
+    									</tr>
+    									{% endfor %}
+  									</tbody>
+								</table>
+							</div>
+							<div class="page-nav">{{ pagination.links }}</div>
+						</div><!--/.download-content -->
+					</div>
+				</div>
+				<!-- modal part end -->
+			</div><!--/.container -->
+
+		</section><!--/.download-->
+		
+		<!-- download end -->
+
+
+		 <!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="../static/jquery.js"></script>
+        
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		<!--bootstrap.min.js-->
+        <script src="../static/bootstrap.min.js"></script>
+		
+		<!-- bootsnav js -->
+		<script src="../static/bootsnav.js"></script>
+		
+		<!-- jquery.sticky.js -->
+		<script src="../static/jquery.sticky.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+		
+		<script type="text/javascript" src="https://ajax.microsoft.com/ajax/jquery/jquery-1.4.min.js"></script>
+
+		<script src="../static/download.js"></script>
+
+    </body>
+	
+</html>

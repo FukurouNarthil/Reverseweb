@@ -1,0 +1,115 @@
+/*=========== TABLE OF CONTENTS ===========
+1.  General css (Reset code)
+2.  Header
+
+/*-------------------------------------
+		1.General css (Reset code)
+--------------------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size:14px;
+    max-width:1920px;
+    margin:0 auto;
+    overflow-x:hidden;
+    overflow-y: hidden;
+}
+
+a,a:active,a:focus {
+    display:inline-block;
+    text-decoration:none;
+    color: #7c8089;
+    font-size: 16px;
+    font-weight: 400;
+    padding:0;
+}
+a:hover {
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+    line-height: 28px;
+    color:#97a0ba;
+    font-size:16px;
+    font-family: 'Poppins', sans-serif;
+}
+img{    border:none;max-width:100%; height:auto;}
+ul{
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+}
+ul li {
+    list-style: none;
+    
+}
+
+html,body{
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.download {
+    /*background: #f4f6fa;*/
+    padding: 70px 0;
+}
+
+.download-content {
+    max-width: 620px;
+}
+
+.page-title { 
+    color: #464d5f;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hint {
+    margin-top: 29px;
+}
+
+.form-group {
+    margin-top: 15px;
+}
+
+.form-inline {
+    text-align: center;
+    float: right;
+}
+
+.panel {
+    border-radius: 10px;
+    border: #ccc 1px solid;
+}
+
+.table {
+    /*border: #ccc 1px solid;*/
+    box-shadow: 0px 0px 20px 4px #ccc;
+}
+
+.table thead {
+    background: #5a84fd;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: #f4f6fa;
+}
+
+.page-nav {
+    text-align: center;
+}
