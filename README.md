@@ -21,7 +21,7 @@
 
   ![](images/firstrun.png)
 
-- 在
+- 在工程reverse下新建应用web：`python manage.py startapp web`
 
 ## 后端代码
 
@@ -125,4 +125,4 @@ def login(request):
 
 - [Django官方文档](https://docs.djangoproject.com/zh-hans/2.2/)
 - [YouTuber Max Goodridge的Django Tutorials](https://www.youtube.com/playlist?list=PLw02n0FEB3E3VSHjyYMcFadtQORvl1Ssj)
-- 
+- 衷心感谢Stack Overflow
